@@ -1,0 +1,25 @@
+{% extends 'crm/base.html' %}
+
+<html>
+
+  {% block content %}
+
+  <h3>Delete your tasks here</h3>
+
+  <hr>
+
+  <form method="POST" autocomplete="off">
+
+    {% csrf_token %}
+
+    <p> Are you sure to delete? </p>
+
+    <br> <br>
+
+    <input type="submit" value="Delete task"/>
+
+  </form>
+
+  {% endblock %}
+
+</html>

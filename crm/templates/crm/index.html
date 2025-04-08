@@ -1,0 +1,27 @@
+{% extends 'crm/base.html' %}
+
+<!-->{% load static %}<-->
+
+<html>
+  {% block content %}
+
+  <h3>Homepage!</h3>
+  <p>Welcome to my homepage!</p>
+
+  {% if first_name == 'John4 Doe' %}
+  <h5>Welcome home, John</h5>
+
+  {% else %}
+  <h5>Access denied!</h5>
+
+  {% endif %} 
+  
+
+  <img
+    src="{% static 'images/free-road.jpg' %}"
+    style="width: 300px; height: auto;"
+    alt="Free Road"
+  >
+ 
+  {% endblock %}
+</html>
